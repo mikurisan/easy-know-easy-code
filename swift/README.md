@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./img/swift.png" width="100" />
+  <img src="./img/swift.png" width="180" />
   <br>
   <h1>Swift</h1>
 </div>
