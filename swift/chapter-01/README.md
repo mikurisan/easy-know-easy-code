@@ -268,3 +268,47 @@ This protection is known as memory safety and includes the following requirement
 
 ## 14 Error Handling
 
+使用 `throws`　标记一个 function 存在 error condition:
+
+```swift
+func <#funcName#> throws{}
+```
+
+使用 `try` 处理该 function 并包含在 do-catch statement 中:
+
+```swift
+do {
+    try <#funcName#>
+} catch {
+}
+```
+
+> Throwing, catching, and propagating errors is covered in greater detail in [Error Handling](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/errorhandling/).
+
+## 15 Assertions and Preconditions
+
+Assertions and Preconditions 判断 conditino 为 `false` **立即停止 execution**. 前者仅生效于 development, 后者还可用于 production.
+
+### 15.1 Debuging with Assertions
+
+传入 condition和可选 message:
+
+```swift
+let age = -3
+assert(age >= 0, "A person's age can't be less than zero.")
+```
+
+等价于使用 `assertionFailure` :
+
+```swift
+if age >= 0 {
+} else {
+    assertionFailure("A person's age can't be less than zero.")
+}
+```
+
+### 15.2 Enforcing Preconditions
+
+使用方式同上, 对应的 keyword 分别为 `precondition` 和 `preconditionFailure` .
+
+> 使用 unchecked mode (-Ounchecked) 编译的时候, compiler 会假设 preconditions 总是 `true` 以优化 code, 但无论如何遇到 `fatalError` 就会停止 execution. 因而在开发早期, 常常使用 `fatalError("Unimplemented")` 标记尚未实现的功能.
