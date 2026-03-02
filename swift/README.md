@@ -11,3 +11,7 @@ Constant and Variables, Comments, Semicolons, Integers, Floating-Point Numbers, 
 ### [Basic Operators](./chapter-02/README.md)
 
 Assignment Operator, Arithmetic Operators, Compound Assignment Operators, Comparison Operators, Ternary Conditional Operators, Nil-Coalescing Operator, Range Operators, Logical Operators.
+
+### [Strings and Characters](./chapter-03/README.md)
+
+Strings and Characters, String Literals, Initializing an Empty String, String Mutability, Strings Are Value Types, Working with Characters, Concatenating Strings and Characters, String Interpolation, Unicode, Counting Characters, Accessing and Modifying a String, Substrings, Comparing Strings, Unicode Representations of Strings.
