@@ -15,3 +15,7 @@ Assignment Operator, Arithmetic Operators, Compound Assignment Operators, Compar
 ### [Strings and Characters](./chapter-03/README.md)
 
 Strings and Characters, String Literals, Initializing an Empty String, String Mutability, Strings Are Value Types, Working with Characters, Concatenating Strings and Characters, String Interpolation, Unicode, Counting Characters, Accessing and Modifying a String, Substrings, Comparing Strings, Unicode Representations of Strings.
+
+### [Collection Types](./chapter-04/README.md)
+
+Mutablity of Collections, Arrays, Sets, Performing Set Operations, Dictionaries.
