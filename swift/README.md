@@ -19,3 +19,6 @@ Strings and Characters, String Literals, Initializing an Empty String, String Mu
 ### [Collection Types](./chapter-04/README.md)
 
 Mutablity of Collections, Arrays, Sets, Performing Set Operations, Dictionaries.
+
+### [Control Flow](./chapter-05/README.md)
+

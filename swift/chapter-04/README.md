@@ -83,13 +83,13 @@ Array(repeating: 0.0, count: 3)
 Iterating items:
 
 ```swift
-for item in #Array {}
+for item in #Array# {}
 ```
 
 调用 `enumerated()` iterating items with its indexes:
 
 ```swift
-for (index, value) in #Array.enumerated() {}
+for (index, value) in #Array#.enumerated() {}
 ```
 
 ## 3 Sets
@@ -137,13 +137,13 @@ A type must be *hashable* in order to be stored in a set — that is, the type m
 Iterating items:
 
 ```swift
-for item in #Set {}
+for item in #Set# {}
 ```
 
 调用 `sorted()` 按顺序 iterating items:
 
 ```swift
-for item in #Set.sorted() {}
+for item in #Set#.sorted() {}
 ```
 
 which returns the set’s elements as an array sorted using the < operator.
@@ -227,17 +227,17 @@ context 明确时可以直接使用 `[:]` .
 Iterating key-value pairs:
 
 ```swift
-for (key, value) in #Dictionary {}
+for (key, value) in #Dictionary# {}
 ```
 
 访问 `key` iterating keys:
 
 ```swift
-for key in #Dictionary.keys
+for key in #Dictionary#.keys
 ```
 
 访问 `value` iterating values.
 
 `key` 和 `value` 属性可以再调用 `sorted()` 访问进行顺序访问.
 
-将 `keys` 转换为 array 的 API 形式 `[Type](#Dictionary.keys)` ; `values` 同.
+将 `keys` 转换为 array 的 API 形式 `[#Type#](#Dictionary#.keys)` ; `values` 同.
