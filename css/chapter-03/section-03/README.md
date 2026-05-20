@@ -71,3 +71,16 @@ z-index property 可以用于修改该优先级, 默认值为 0, 接受正负数
 
 # 5 Fixed positioning
 
+与 absolute positioning 机制相似, 只不过相对的是 the visible portion  of the viewport (browser 窗口的可见部份).
+
+```css
+postion: fixed;
+```
+
+[在线示例](https://mdn.github.io/learning-area/css/css-layout/positioning/6_fixed-positioning.html) (heading 1 总是固定在可视视窗上方, 无论如何 scroll).
+
+# 6 Sticky positioning
+
+是 relative and fixed position 的混合, 当 scroll 时未到达 threshold 表现得像 relative position, 到达后表现为 fixed postion.
+
+[在线示例](https://mdn.github.io/learning-area/css/css-layout/positioning/7_sticky-positioning.html), 当每个黑色块达到预设的 `top: 0` 之后就转为 absolute postioning.
